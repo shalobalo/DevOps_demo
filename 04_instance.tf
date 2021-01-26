@@ -37,9 +37,9 @@ resource "aws_autoscaling_group" "docker_nginx" {
   launch_configuration  = aws_launch_configuration.docker_nginx_conf.name
   vpc_zone_identifier   = [ aws_subnet.Pub_Subnet_a.id, aws_subnet.Pub_Subnet_b.id, aws_subnet.Pub_Subnet_c.id ]
   target_group_arns     = [ aws_lb_target_group.ProjectATG.arn ]
-  desired_capacity      = 5
-  min_size              = 3
-  max_size              = 5
+  desired_capacity      = 1
+  min_size              = 1
+  max_size              = 1
 }
 
 ########################################################################################
