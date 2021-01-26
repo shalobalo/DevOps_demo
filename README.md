@@ -16,3 +16,4 @@ version is `0.12.*`.
 - Run `terraform apply -var-file=./secrets.tfvars` to apply changes, confirm changes with `yes`. You might be asked for AWS credentials and DB password, if `secrets.tfvars` file missed.
 - To delete all created resources in AWS run `terraform destroy -var-file=./secrets.tfvars`, review changes you going to apply, then confirm with `yes`.
 
+# New change Commit
